@@ -1,0 +1,12 @@
+<div class="jumbotron">
+  <h1>{{fullName}}</h1>
+  <img class="mb-4" src={{avatar}} alt="" width="100" height="100">
+  <p class="lead"><a href="mailto:{{email}}">{{email}}</a></p>
+  <p class="lead">Created at: {{createdAt}}</p>
+  <p class="lead">Updated last time at: {{updatedAt}}</p>
+  <p class="lead">Google account: {{google}}</p>
+  <p class="lead">Facebook account: {{facebook}}</p>
+  <form method="POST" action="/users/{{email}}?_method=DELETE">
+    <button class="btn btn-lg btn-danger" type="submit">Delete account</button>
+  </form>
+</div>
